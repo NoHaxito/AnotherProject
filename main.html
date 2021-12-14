@@ -5,82 +5,68 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Navigation</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="./styles.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 	</head>
 	<body>
-		<!-- Navbar goes here -->
-		<nav class="bg-white shadow-lg">
-			<div class="max-w-6xl mx-auto px-4">
-				<div class="flex justify-between">
-					<div class="flex space-x-7">
-						<div>
-							<!-- Website Logo -->
-							<a href="#" class="flex items-center py-4 px-2">
-								<img src="data:image/jpeg;base64,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" alt="ExampleLogo" class="h-8 w-8 mr-2">
-								<span class="font-semibold text-gray-500 text-lg">ServerName</span>
-							</a>
-						</div>
-						<!-- Primary Navbar items -->
-						<div class="hidden md:flex items-center space-x-1">
-							<a href="" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
-							<a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Store</a>
-							<a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Discord</a>
-							<a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Support</a>
-						</div>
-					</div>
-					<!-- Secondary Navbar items -->
-					<div class="hidden md:flex items-center space-x-3 ">
-						<a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Copy Ip</a>
-                        
-					</div>
-					<!-- Mobile menu button -->
-					<div class="md:hidden flex items-center">
-						<button class="outline-none mobile-menu-button">
-						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
-							x-show="!showMenu"
-							fill="none"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path d="M4 6h16M4 12h16M4 18h16"></path>
-						</svg>
-					</button>
-					</div>
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+			  <a class="navbar-item" href="https://bulma.io">
+				<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+			  </a>
+		  
+			  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			  </a>
+			</div>
+		  
+			<div id="navbarBasicExample" class="navbar-menu">
+			  <div class="navbar-start">
+				<a class="navbar-item">
+				  Home
+				</a>
+		  
+				<a class="navbar-item">
+				  Documentation
+				</a>
+		  
+				<div class="navbar-item has-dropdown is-hoverable">
+				  <a class="navbar-link">
+					More
+				  </a>
+		  
+				  <div class="navbar-dropdown">
+					<a class="navbar-item">
+					  About
+					</a>
+					<a class="navbar-item">
+					  Jobs
+					</a>
+					<a class="navbar-item">
+					  Contact
+					</a>
+					<hr class="navbar-divider">
+					<a class="navbar-item">
+					  Report an issue
+					</a>
+				  </div>
 				</div>
+			  </div>
+		  
+			  <div class="navbar-end">
+				<div class="navbar-item">
+				  <div class="buttons">
+					<a class="button is-primary">
+					  <strong>Sign up</strong>
+					</a>
+					<a class="button is-light">
+					  Log in
+					</a>
+				  </div>
+				</div>
+			  </div>
 			</div>
-			<!-- mobile menu -->
-			<div class="hidden mobile-menu">
-				<ul class="">
-					<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-yellow-500 font-semibold">Home</a></li>
-					<li><a href="#services" class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300">Store</a></li>
-					<li><a href="#about" class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300">Discord</a></li>
-					<li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300">Support</a></li>
-                    <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300">Copy Server IP</a></li>
-				</ul>
-			</div>
-			<script>
-				const btn = document.querySelector("button.mobile-menu-button");
-				const menu = document.querySelector(".mobile-menu");
-
-				btn.addEventListener("click", () => {
-					menu.classList.toggle("hidden");
-				});
-			</script>
-		</nav>
-        <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna neque, placerat eu sodales non, vehicula ut velit. Nullam facilisis magna urna, ac condimentum purus pulvinar eget. Aliquam erat volutpat. Suspendisse a elementum nulla, non tempor nisl. Cras vitae odio scelerisque, auctor nulla id, eleifend ex. Fusce ornare, velit et molestie imperdiet, nisl diam accumsan velit, ut suscipit nisi arcu ac tortor. Phasellus lobortis scelerisque mi a feugiat. Fusce eu elit id libero sagittis laoreet vel id mauris. Vestibulum est urna, hendrerit eu viverra sit amet, tempus ut sem.
-
-                Duis sagittis lectus nec nisi facilisis sagittis. Quisque semper nibh nunc, a vulputate urna eleifend vitae. Proin velit urna, fringilla sit amet imperdiet ac, placerat eget erat. Sed in ante tellus. Aenean dictum quam ac massa tempor, at imperdiet libero scelerisque. Fusce vel mauris posuere, hendrerit ligula in, tincidunt metus. Donec consectetur neque ut ante feugiat elementum. Phasellus euismod magna et tortor ullamcorper mollis. Aenean facilisis imperdiet dui, non interdum justo scelerisque sit amet. Morbi massa ante, ultricies at ex ac, maximus tincidunt nisl. Donec ornare cursus enim, eu dapibus velit gravida ac. Duis commodo, magna ac laoreet hendrerit, purus quam vulputate quam, nec scelerisque lacus lacus vitae diam. Morbi commodo gravida quam, sit amet eleifend eros tristique sed.
-                
-                Maecenas tincidunt sapien sed dui feugiat feugiat. Curabitur scelerisque luctus ullamcorper. Vivamus non venenatis felis. Quisque consectetur quam quis imperdiet suscipit. Nulla nec leo elit. Cras ut felis id dolor varius ultricies aliquam congue turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque tempus lectus eu tellus consectetur sagittis. Cras ultrices ullamcorper mattis. Proin aliquet auctor felis interdum euismod. Nunc id ipsum ligula. Pellentesque interdum, est a dignissim malesuada, turpis mauris ullamcorper odio, commodo semper est nisi sed tortor. Duis viverra nunc a euismod aliquet. Morbi ultricies nisl ut suscipit suscipit. Aenean placerat eros ac eleifend auctor. Nam et urna sed tellus semper suscipit.
-                
-                Phasellus feugiat nulla eget lacus ornare malesuada. Mauris sodales orci ex, mattis condimentum justo lobortis sit amet. Pellentesque purus libero, hendrerit et nisi at, interdum molestie velit. Etiam pharetra lorem et metus sagittis pulvinar. Ut porta varius est, sed efficitur nisl fermentum vitae. Phasellus sagittis, lectus non fringilla faucibus, magna ex auctor elit, vitae tincidunt mi libero consectetur nisl. Pellentesque placerat commodo justo sit amet porttitor. Curabitur vehicula diam sapien, sodales venenatis lacus iaculis quis. Ut placerat justo lacus, at scelerisque mi accumsan sed. Vestibulum scelerisque risus diam.
-                
-                Mauris dictum, magna elementum fermentum cursus, sem quam tempor nibh, nec rutrum ante odio vitae ante. Etiam et bibendum dolor, id congue diam. Quisque dapibus velit a vulputate fermentum. Maecenas tempus, augue at blandit facilisis, nibh orci luctus enim, auctor tristique ipsum ipsum id quam. Praesent varius augue a lectus vulputate, at interdum felis porta. Quisque gravida sed erat eleifend pulvinar. Pellentesque nec porttitor ante. Aenean vitae nisi eget sem commodo dignissim quis id quam. Pellentesque vitae augue ipsum. Pellentesque laoreet magna nec viverra commodo. Donec a turpis sed sem placerat tempor sed accumsan tortor.</p>
-    </section>
+		  </nav>
 	</body>
 </html>
